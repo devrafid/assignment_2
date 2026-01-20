@@ -484,8 +484,8 @@ footer{
     }
     .podcast-div2{
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         width: 576px;
         gap: 0px;
         justify-content: space-evenly;
@@ -562,6 +562,22 @@ footer{
     .podcast-div1{
         width: auto;
         height: auto;
+    }
+    .podcast-div{
+        width: auto !important;
+
+    }
+    .podcast-div2{
+        width: auto !important;
+
+    }
+    *div{
+        width: auto !important;
+        height: auto !important;
+
+    }
+    .footer-div p{
+        text-align: center;
     }
 }
 
