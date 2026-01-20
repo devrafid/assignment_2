@@ -9,7 +9,7 @@
     font-family: inter;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 h1, h2, h3, h4, h5, p, button, a, ul{
     color: white;
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, p, button, a, ul{
 p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 160%;
 }
 .color1{
     background-color: #1A0B2E;
@@ -37,9 +37,14 @@ p{
     display: flex;
 }
 /* Nav Bar CSS */
+nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.200);
+}
 .nav-bar{
     justify-content: space-between;
     padding: 16px 0px;
+    align-items: center;
+    
 }
 .menu{
     gap: 32px;
@@ -64,8 +69,16 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 560px;
-    
+}
+.hero-content-div{
+    flex-direction: column;
+    gap: 40px;
+    margin: 100px auto;
+}
+.content-1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .mic-div{
     background-image: url(/assets/hero-circle.png);
@@ -79,9 +92,247 @@ p{
     width: 116px;
     height: 175px;
 }
+.content-2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
 .hero-div h1{
     font-size: 60px;
     font-weight: 800;
     line-height: 100%;
     text-transform: capitalize;
+}
+.hero-btn-div{
+    gap: 8px;
+}
+.h-btn-1{
+
+}
+.h-btn-2{
+
+}
+
+
+/* About the Podcast Section CSS */
+.podcast-div{
+    flex-direction: column;
+    padding: 50px 0px 120px 0px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.podcast-div1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.podcast-div1 h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+.podcast-div1 p{
+    text-align: center;
+    padding: 0px 200px;
+    line-height: 160%;
+}
+.divider{
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.200);
+}
+.podcast-div2{
+    justify-content: space-around;
+    width: 1200px;
+}
+.podcast-div2 div{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.podcast-div2 div h3{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+    letter-spacing: 2px;
+}
+.podcast-div2 div p{
+    text-transform: uppercase;
+}
+
+
+/* Why Choose TechWave CSS */
+.choose-sec{
+    padding: 120px 0px;
+}
+
+.choose-div{
+    flex-direction: column;
+    gap: 40px;
+}
+.choose-div h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.choose-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.choose-grid div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #35116566;
+    justify-content: center;
+}
+.choose-grid div img{
+    width: 50px;
+    height: 50px;
+}
+.choose-grid div h4{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.grid-1{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.grid-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.grid-3{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+/* Featured Episodes CSS */
+.episode-sec{
+    padding: 120px 0px;
+}
+.episode-div{
+    flex-direction: column;
+    gap: 120px;
+}
+.e-div1{
+    flex-direction: column;
+    gap: 40px;
+}
+.e-div1 h3{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+.card-div{
+    gap: 30px;
+}
+.card{
+
+}
+.iframe-div{
+    
+}
+.iframe-div iframe{
+    border-radius: 24px 24px 0px 0px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #250D44;
+}
+.card-content h4{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.card-content{
+
+}
+.time{    
+    gap: 6px;
+}
+.time p{    
+    color: #00FF88;
+}
+
+
+.e-div2{
+    flex-direction: column;
+    gap: 40px;
+}
+.e-div2 h3{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+.host-card{
+    gap: 24px;
+    padding: 40px;
+    border-radius: 40px;
+}
+.host-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.host-card-content{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.host-card div h4{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.host-social{
+    gap: 8px;
+}
+.host-social img{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #533C72;
+}
+
+/* Footer Section CSS */
+footer{
+    background-image: url(/assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px;
+}
+.footer-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.footer-logo{
+    width: 410px;
+    height: 60px;
+
+}
+.footer-social{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
 }
