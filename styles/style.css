@@ -60,7 +60,7 @@ nav{
 
 /* Hero Section CSS */
 .hero-sec{
-    background-image: url(/assets/hero-bg.png);
+    background-image: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -81,7 +81,7 @@ nav{
     align-items: center;
 }
 .mic-div{
-    background-image: url(/assets/hero-circle.png);
+    background-image: url("../assets/hero-circle.png");
     width: 350px;
     height: 350px;
     flex-direction: column;
@@ -315,7 +315,7 @@ nav{
 
 /* Footer Section CSS */
 footer{
-    background-image: url(/assets/footer-bg.png);
+    background-image: url("../assets/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
